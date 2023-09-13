@@ -1,0 +1,3 @@
+/home/nastia/CLionProjects/simple_text_editorr/cmake-build-debug/CMakeFiles/simple_text_editorr.dir
+/home/nastia/CLionProjects/simple_text_editorr/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nastia/CLionProjects/simple_text_editorr/cmake-build-debug/CMakeFiles/rebuild_cache.dir
