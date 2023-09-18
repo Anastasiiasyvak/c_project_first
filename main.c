@@ -14,11 +14,15 @@ int main() {
         getchar();
         switch (command) {
             case 1:
-                printf("Enter text to append:", text);
+                printf("Enter text to append: \n", text);
                 fgets(text, sizeof(text), stdin);
                 File = (char *) realloc(File, strlen(File) + strlen(text) + 1);
                 strcat(File, text);
                 printf("%s", File);
+                break;
+            case 2:
+                strcat(File, "\n");
+                printf("New line is started\n");
                 break;
         }
     }
