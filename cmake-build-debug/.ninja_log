@@ -1,0 +1,15 @@
+# ninja log v5
+0	27	1694591664491739686	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+27	43	1694591664507739807	simple_text_editorr	dece7431514ce4bc
+1	108	1695066648826610820	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+108	137	1695066648854610533	simple_text_editorr	dece7431514ce4bc
+0	20	1695066801605160940	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+20	42	1695066801625160763	simple_text_editorr	dece7431514ce4bc
+0	34	1695069008030116585	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+34	53	1695069008046116358	simple_text_editorr	dece7431514ce4bc
+1	25	1695069059685388581	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+25	40	1695069059701388357	simple_text_editorr	dece7431514ce4bc
+0	26	1695069185391652802	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+27	46	1695069185411652529	simple_text_editorr	dece7431514ce4bc
+0	34	1695071537254380159	CMakeFiles/simple_text_editorr.dir/main.c.o	353222b1b5972d1d
+34	61	1695071537278379055	simple_text_editorr	dece7431514ce4bc
