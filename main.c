@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 
 int main() {
     int command;
     char* File = NULL;
+    char file_for_saving[100];
     while(true) {
         printf("Choose the command! \n");
         scanf("%d", &command);
@@ -29,7 +31,19 @@ int main() {
                 strcat(File, "\n");
                 printf("New line is started\n");
                 break;
-
+            case 3:
+                printf("Enter the file name for saving:");
+                scanf("%99s", file_for_saving);
+                FILE* file;
+                file = fopen(file_for_saving, "w");
+                if (file != NULL)
+                {
+                    fputs(File, file);
+                    fclose(file);
+                    printf("Text has been saved successfully\n");
+                }
+                break;
+                
             default:
                 printf("The command is not implemented\n");
                 break;
