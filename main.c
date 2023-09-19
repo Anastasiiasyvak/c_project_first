@@ -8,6 +8,7 @@ int main() {
     char* Buffer = NULL;
     char file_for_saving[100];
     char file_for_loading[100];
+    char loaded_text[500] = {'\0'};
     while(true) {
         printf("Choose the command! \n");
         scanf("%d", &command);
@@ -49,13 +50,12 @@ int main() {
                 printf("Enter the file name for loading:");
                 scanf("%99s", file_for_loading);
                 FILE* load_file;
-                char load[500]={'\0'};
                 load_file = fopen(file_for_loading, "r");
-                if(NULL == load_file){
+                if (NULL == load_file) {
                     printf("Error opening file\n");
-                }
-                else {
-                    if (fread(load, sizeof(char), sizeof(load), load_file) > 0) {
+                } else {
+                    size_t bytesRead = fread(loaded_text, sizeof(char), sizeof(loaded_text), load_file);
+                    if (bytesRead > 0) {
                         printf("Text has been loaded successfully\n");
                     } else {
                         printf("Failed to read from the file\n");
@@ -64,9 +64,9 @@ int main() {
                 }
                 break;
 
-
-
-
+            case 5:
+                printf("%s", loaded_text);
+                break;
 
             default:
                 printf("The command is not implemented\n");
